@@ -1,6 +1,8 @@
-import Hero from "./Hero";
+import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-export { Hero, Projects, Contact, Footer };
+export { About, Projects, Contact, Footer };
+
+// Hamburger Menu Responsiveness

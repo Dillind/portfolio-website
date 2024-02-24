@@ -1,18 +1,19 @@
 import { About, Projects, Contact, Footer } from "./sections/index.js";
-import Nav from "./components/Nav.jsx";
+import NavBar from "./components/NavBar.jsx";
+
 const App = () => (
   <main className="relative">
-    <Nav />
-    <section className="xl:padding-1 wide:padding-r padding-b">
+    <NavBar />
+    <section className="padding-x">
       <About />
     </section>
-    <section className="padding">
+    <section className="padding-x py-10">
       <Projects />
     </section>
     <section className="padding-x py-10">
       <Contact />
     </section>
-    <section className="bg-black padding-x padding-t pb-8">
+    <section className="py-10">
       <Footer />
     </section>
   </main>
