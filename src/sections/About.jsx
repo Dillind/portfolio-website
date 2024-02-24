@@ -152,7 +152,11 @@ const About = () => {
           </a>
         </span>
         <div className="mt-5">
-          <Button label="Resume" iconURL={downloadIcon} linkTo={"resume.pdf"} />
+          <Button
+            label="Resume"
+            iconURL={downloadIcon}
+            linkTo="/resume/resume.pdf"
+          />
         </div>
       </div>
       {/* Portrait */}
