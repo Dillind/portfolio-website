@@ -119,7 +119,11 @@ const About = () => {
         </p>
         <p className="font-montserrat my-5">
           Contact me {""}
-          <a href="#contact" id="hire-me">
+          <a
+            href="#contact"
+            id="hire-me"
+            className="cursor-pointer hover:text-primaryColor"
+          >
             here.
           </a>
         </p>
