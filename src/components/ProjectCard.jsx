@@ -80,8 +80,8 @@ const ProjectCard = ({
                 <img
                   src={githubHovered ? githubBlueIcon : githubIcon}
                   alt="github icon"
-                  // width={28}
-                  // height={28}
+                  width={30}
+                  height={30}
                 />
               </a>
             ))}
@@ -111,8 +111,8 @@ const ProjectCard = ({
                       : arrowUpRightIcon
                   }
                   alt="arrow up right icon"
-                  // width={20}
-                  // height={20}
+                  width={15}
+                  height={15}
                 />
               </a>
             ))}
