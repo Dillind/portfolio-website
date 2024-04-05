@@ -40,9 +40,7 @@ export const projects = [
     github: [
       { title: "Code", linkTo: "https://github.com/Dillind/the-mobile-hour" },
     ],
-    liveDemo: [
-      { title: "Live Demo", linkTo: "https://the-mobile-hour.up.railway.app/" },
-    ],
+    liveDemo: [{ title: "Live Demo", linkTo: "" }],
   },
   // Project 3: Beer-O-Clock
   {
