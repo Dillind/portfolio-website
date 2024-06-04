@@ -159,7 +159,7 @@ const About = () => {
           <Button
             label="Resume"
             iconURL={downloadIcon}
-            linkTo="/resume/resume.pdf"
+            linkTo="dylan-resume.pdf"
           />
         </div>
       </div>
