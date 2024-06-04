@@ -36,22 +36,22 @@ const ProjectCard = ({
   }, [stack]);
 
   return (
-    <div className="flex flex-1 flex-col w-full max-sm:w-full items-center bg-[#fff] rounded-lg p-5 shadow-xl transition-transform transform hover:scale-105">
+    <div className="flex flex-1 flex-col w-full max-sm:w-full items-center bg-[#fff] rounded-lg p-5 shadow-xl">
       <img
         src={imgURL}
         alt={title}
-        className="w-full rounded-lg border-2 max-w-sm sm:max-w-md object-cover"
+        className="object-cover w-full max-w-sm border-2 rounded-lg sm:max-w-md"
       />
       <h4 className="text-3xl max-sm:text-[25px] font-palanquin font-bold my-3 text-center">
         {title}
       </h4>
-      <p className="lg:max-w-md mt-2 font-montserrat my-3 text-center">
+      <p className="my-3 mt-2 text-center lg:max-w-md font-montserrat">
         {description}
       </p>
-      <div className="flex gap-5 justify-center items-center flex-wrap">
+      <div className="flex flex-wrap items-center justify-center gap-5">
         {stack.map((technology, index) => (
           <p
-            className=" mt-2 px-2 py-2 font-montserrat text-center"
+            className="px-2 py-2 mt-2 text-center font-montserrat"
             key={technology}
             id={`technology-${technology}`}
           >
@@ -59,7 +59,7 @@ const ProjectCard = ({
           </p>
         ))}
       </div>
-      <div className="flex mt-6 gap-10 font-montserrat">
+      <div className="flex gap-10 mt-6 font-montserrat">
         {/* Github Code Link */}
         {github && (
           <div
@@ -72,6 +72,7 @@ const ProjectCard = ({
             {github.map((item, index) => (
               <a
                 href={item.linkTo}
+                rel="noreferrer"
                 key={index}
                 target="_blank"
                 className="flex gap-2"
@@ -100,6 +101,7 @@ const ProjectCard = ({
               <a
                 href={item.linkTo}
                 key={index}
+                rel="noreferrer"
                 className="flex gap-2"
                 target="_blank"
               >
