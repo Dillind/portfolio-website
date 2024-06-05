@@ -1,8 +1,21 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website. This website showcases my projects, skills and professional experiences as a developer.
 
-Currently, two official plugins are available:
+## Project Overview and Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio website serves as a platform to present my work, highlight my technical skills, and provide information about my professional background. It is designed to be user-friendly, responsive, and easy to navigate, ensuring a seamless experience for visitors.
+
+## Technologies Used
+
+In this project, various technologies and libraries are used to ensure a robust and modern web application.
+
+### Frontend
+
+- [React](https://www.npmjs.com/package/react): A JavaScript library for building component based user interfaces.
+
+- [vite](https://www.npmjs.com/package/vite): A build tool that serves your code via native ES modules with dynamic imports.
+
+- [tailwindcss](https://www.npmjs.com/package/tailwindcss): A utility-first CSS framework for rapidly building custom designs.
+
+- [emailjs](https://www.emailjs.com/): A service that enables sending emails directly from your client-side JavaScript code without server-side code.
