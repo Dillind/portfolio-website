@@ -58,7 +58,7 @@ const Contact = () => {
                 name="user_name"
                 className="border-2 border-black text-sm w-full p-2 rounded-lg focus:outline-none focus:border-primaryColor"
                 id="name"
-                placeholder="Name"
+                placeholder="Your Name"
                 pattern="^[A-Z]{1}[A-Za-z \-']+$"
                 required
               />
@@ -73,7 +73,7 @@ const Contact = () => {
                 name="user_email"
                 className="border-2 border-[#000000] text-sm w-full p-2 rounded-lg focus:outline-none focus:border-primaryColor"
                 id="email"
-                placeholder="Email"
+                placeholder="Your Email"
                 pattern="^\S{1,}@\S{1,}[.]\S{1,}$"
                 required
               />
