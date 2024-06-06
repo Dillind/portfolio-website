@@ -14,10 +14,10 @@ In this project, various technologies and libraries are used to ensure a robust 
 
 - [React](https://www.npmjs.com/package/react): A JavaScript library for building component based user interfaces.
 
-- [vite](https://www.npmjs.com/package/vite): A build tool that serves your code via native ES modules with dynamic imports.
+- [Vite](https://www.npmjs.com/package/vite): A build tool that serves your code via native ES modules with dynamic imports.
 
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss): A utility-first CSS framework for rapidly building custom designs.
+- [Tailwindcss](https://www.npmjs.com/package/tailwindcss): A utility-first CSS framework for rapidly building custom designs.
 
-- [emailjs](https://www.emailjs.com/): A service that enables sending emails directly from your client-side JavaScript code without server-side code.
+- [Emailjs](https://www.emailjs.com/): A service that enables sending emails directly from your client-side JavaScript code without server-side code.
 
-- [typescript](https://www.typescriptlang.org/): A typed superset of JavaScript that compiles to plain JavaScript.
+- [Typescript](https://www.typescriptlang.org/): A typed superset of JavaScript that compiles to plain JavaScript.
