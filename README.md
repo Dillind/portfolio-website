@@ -19,3 +19,5 @@ In this project, various technologies and libraries are used to ensure a robust 
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): A utility-first CSS framework for rapidly building custom designs.
 
 - [emailjs](https://www.emailjs.com/): A service that enables sending emails directly from your client-side JavaScript code without server-side code.
+
+- [typescript](https://www.typescriptlang.org/): A typed superset of JavaScript that compiles to plain JavaScript.
