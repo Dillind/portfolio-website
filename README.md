@@ -20,4 +20,4 @@ In this project, various technologies and libraries are used to ensure a robust 
 
 - [Emailjs](https://www.emailjs.com/): A service that enables sending emails directly from your client-side JavaScript code without server-side code.
 
-- [Typescript](https://www.typescriptlang.org/): A typed superset of JavaScript that compiles to plain JavaScript.
+- [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript that compiles to plain JavaScript.
