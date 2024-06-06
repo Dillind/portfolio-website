@@ -1,28 +1,31 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import React from "react";
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_907g9ff",
-        "template_725jx6c",
-        form.current,
-        "TTn9NJ1f7LeT5KLVk"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_907g9ff",
+          "template_725jx6c",
+          form.current,
+          "TTn9NJ1f7LeT5KLVk"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            e.currentTarget.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   return (
@@ -53,7 +56,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="user_name"
-                className="border-2 border-[#000000] text-sm w-full p-2 rounded-lg focus:outline-none focus:border-primaryColor"
+                className="border-2 border-black text-sm w-full p-2 rounded-lg focus:outline-none focus:border-primaryColor"
                 id="name"
                 placeholder="Name"
                 pattern="^[A-Z]{1}[A-Za-z \-']+$"
@@ -81,8 +84,8 @@ const Contact = () => {
               name="message"
               id="message"
               placeholder="Message"
-              cols="30"
-              rows="10"
+              cols={30}
+              rows={10}
               className="border-2 border-[#000000] text-sm w-full p-2 rounded-lg resize-none focus:outline-none focus:border-primaryColor"
             ></textarea>
           </article>

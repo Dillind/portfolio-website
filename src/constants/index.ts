@@ -1,6 +1,26 @@
-import { projectOne, projectTwo, projectThree } from "../assets/images";
+import {
+  projectOne,
+  projectTwo,
+  projectThree,
+  projectFour,
+} from "../assets/images";
 
-export const navLinks = [
+interface navLinksProps {
+  href: string;
+  label: string;
+}
+
+interface projectsProps {
+  id: number;
+  imgURL: string;
+  title: string;
+  description: string;
+  stack: string[];
+  github: { title: string; linkTo: string }[];
+  liveDemo?: { title: string; linkTo: string }[];
+}
+
+export const navLinks: navLinksProps[] = [
   {
     href: "#about",
     label: "About",
@@ -15,9 +35,10 @@ export const navLinks = [
   },
 ];
 
-export const projects = [
+export const projects: projectsProps[] = [
   // Project 1: ML Strength: Health and Fitness
   {
+    id: 1,
     imgURL: projectOne,
     title: "ML Strength",
     description:
@@ -32,6 +53,7 @@ export const projects = [
   },
   // Project 2: The Mobile Hour
   {
+    id: 2,
     imgURL: projectTwo,
     title: "The Mobile Hour",
     description:
@@ -44,10 +66,11 @@ export const projects = [
   },
   // Project 3: Beer-O-Clock
   {
+    id: 3,
     imgURL: projectThree,
     title: "Beer-O-Clock",
     description:
-      "Beer-O-Clock is a full-stack application that enables users to select a country from a dropdown menu, providing access to information about the most popular beers in that country, including product specifications and the Australian stores that they can be purchased from.",
+      "Beer-O-Clock is a full-stack web application that enables users to select a country from a dropdown menu, providing access to information about the most popular beers in that country, including product specifications and the Australian stores that they can be purchased from.",
     stack: ["MERN", "MaterialUI", "API"],
     github: [
       { title: "Code", linkTo: "https://github.com/Dillind/Beer-O-Clock-V3" },
@@ -56,4 +79,19 @@ export const projects = [
       { title: "Live Demo", linkTo: "https://beer-o-clock.netlify.app/" },
     ],
   },
+  // {
+  //   // Project 4: High Street Gym
+  //   id: 4,
+  //   imgURL: projectFour,
+  //   title: "High Street Gym",
+  //   description:
+  //     "High Street Gym is a full-stack mobile web application that creates a seamless user experience for gym members to book and manage their classes, as well as interact with other members via the built-in blog system.",
+  //   stack: ["SERN", "DaisyUI"],
+  //   github: [
+  //     { title: "Code", linkTo: "https://github.com/Dillind/high-street-gym" },
+  //   ],
+  //   // liveDemo: [
+  //   //   { title: "Live Demo", linkTo: "" },
+  //   // ],
+  // },
 ];

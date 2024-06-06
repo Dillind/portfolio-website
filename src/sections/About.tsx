@@ -3,16 +3,17 @@ import { githubIcon, linkedinIcon, downloadIcon } from "../assets/icons";
 import { dylanPortrait } from "../assets/images";
 import Button from "../components/Button";
 import { annotate } from "rough-notation";
+import React from "react";
 
 const About = () => {
   useEffect(() => {
     // TODO: Fix the roughnotation variables
-    const n1 = document.getElementById("hire-me");
-    const n2 = document.getElementById("developer");
-    const n4 = document.getElementById("user-friendly");
-    const n5 = document.getElementById("appealing");
-    const n6 = document.getElementById("frontend");
-    const n7 = document.getElementById("backend");
+    const n1 = document.getElementById("hire-me")!;
+    const n2 = document.getElementById("developer")!;
+    const n4 = document.getElementById("user-friendly")!;
+    const n5 = document.getElementById("appealing")!;
+    const n6 = document.getElementById("frontend")!;
+    const n7 = document.getElementById("backend")!;
 
     const a1 = annotate(n1, {
       type: "underline",

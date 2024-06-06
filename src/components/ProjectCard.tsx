@@ -6,8 +6,20 @@ import {
   githubBlueIcon,
   arrowUpRightBlueIcon,
 } from "../assets/icons";
-import Button from "../components/Button";
+import Button from "./Button";
 import { annotate } from "rough-notation";
+import React from "react";
+
+interface projectsProps {
+  id: number;
+  imgURL: string;
+  title: string;
+  description: string;
+  stack: string[];
+  github: { title: string; linkTo: string }[];
+  liveDemo?: { title: string; linkTo: string }[];
+}
+
 const ProjectCard = ({
   imgURL,
   title,
@@ -15,7 +27,7 @@ const ProjectCard = ({
   stack,
   github,
   liveDemo,
-}) => {
+}: projectsProps) => {
   const [githubHovered, setGithubHovered] = useState(false);
   const [arrowUpRightHovered, setArrowUpRightHovered] = useState(false);
 

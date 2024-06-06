@@ -1,4 +1,12 @@
-const Button = ({ label, iconURL, linkTo }) => {
+import React from "react";
+
+interface buttonProps {
+  label: string;
+  iconURL: string;
+  linkTo: string;
+}
+
+const Button = ({ label, iconURL, linkTo }: buttonProps) => {
   return (
     <a
       href={linkTo}

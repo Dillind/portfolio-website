@@ -4,6 +4,7 @@ import {
   emailIcon,
   copyrightSignIcon,
 } from "../assets/icons";
+import React from "react";
 
 const Footer = () => {
   return (

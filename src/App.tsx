@@ -1,5 +1,6 @@
 import { About, Projects, Contact, Footer } from "./sections/index.js";
-import NavBar from "./components/NavBar.jsx";
+import NavBar from "./components/NavBar.js";
+import React from "react";
 
 const App = () => (
   <main className="relative">

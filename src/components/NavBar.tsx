@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { hamburgerIcon, xmarkIcon } from "../assets/icons";
 import { navLinks } from "../constants";
+import React from "react";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
