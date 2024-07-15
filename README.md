@@ -21,3 +21,5 @@ In this project, various technologies and libraries are used to ensure a robust 
 - [Emailjs](https://www.emailjs.com/): A service that enables sending emails directly from your client-side JavaScript code without server-side code.
 
 - [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript that compiles to plain JavaScript.
+
+- [RoughNotation](https://roughnotation.com/): A small JavaScript library to create and animate annotations on a web page.
